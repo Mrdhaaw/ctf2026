@@ -1,0 +1,14 @@
+name: "brika v1"
+author: "Nerdicon"
+category: pwn
+description: "making a brika is easy"
+value: 100
+extra:
+    initial: 500
+    decay: 20
+    minimum: 100
+flags:
+    - flag: "Spark{br1k4_m3ngh1r_k4b4r}"
+      data: case_insensitive
+state: hidden
+version: "0.1"
