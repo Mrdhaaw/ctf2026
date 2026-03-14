@@ -3,7 +3,6 @@
 #include <stdbool.h> 
 #include <stdlib.h> 
 
-
 enum {
 	malso9a=0x6d,
 	adham=0x61,
@@ -19,21 +18,26 @@ void make_brika() {
 	char name[16];
 
 	printf("Brika mt3 chkoun? ");
-
-	fflush(stdout);
+	fflush(stdout);	
 	
-	fgets(name,200,stdin);
-	
-	for (int i = 0;i<4;i++){
-		if (brika[i] == kabar) {
-			printf("mn7ibch kabar!\n");
-			exit(1);
-		}
+	fgets(name,33,stdin);
+	if (
+		brika[0] == 'm' &&
+		brika[1] == 'a' &&
+		brika[2] == 't' &&
+		brika[3] == 'i'
+	) {
+		puts("mmm Mala Benna Ya Latif!\n");
+		fflush(stdout);
+		win();
+	} else {
+		printf("brika masta ;(\n");
 	}
+
 }
 
 int main() {
-	printf("Brika: ");
+	printf("Brika :) : \n");
 	printf(
 		"malso9a = 0x6d\n"
 		"adham   = 0x61\n"
@@ -41,10 +45,5 @@ int main() {
 		"kabar   = 0x6b\n"
 		"ijbn    = 0x69\n"
 	);
-	make_brika();
-	puts("mmm Mala Benna Ya Latif!\n");
-	fflush(stdout);
-
-	win();
-	return 0;
+	make_brika();	
 }

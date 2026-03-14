@@ -1,0 +1,10 @@
+services:
+  brika2:
+    build: .
+    container_name: brika2
+    user: ctf
+    working_dir: /home/ctf
+    entrypoint: /bin/sh -c "./ynetd -p 6666 /home/ctf/main"
+    ports:
+      - "6666:6666"
+    read_only: true

@@ -1,0 +1,14 @@
+name: "brika v2"
+author: "Nerdicon"
+category: pwn
+description: "making a brika is a little harder"
+value: 100
+extra:
+    initial: 500
+    decay: 20
+    minimum: 100
+flags:
+    - flag: "Spark{mmm_mala_b3nn4_XD}"
+      data: case_insensitive
+state: hidden
+version: "0.2"

@@ -1,8 +1,6 @@
-//build: gcc -o main -fno-stack-protector main.c
 #include <stdio.h> 
 #include <stdbool.h> 
 #include <stdlib.h> 
-
 
 enum {
 	malso9a=0x6d,
@@ -12,7 +10,7 @@ enum {
 	ijbn=0x69,
 };
 void win() {
-	system("/bin/sh");
+	printf("flag\n");
 }
 void make_brika() {
 	char brika[4] = {malso9a,adham,thon,kabar};
@@ -30,6 +28,7 @@ void make_brika() {
 			exit(1);
 		}
 	}
+	win();
 }
 
 int main() {
@@ -42,9 +41,5 @@ int main() {
 		"ijbn    = 0x69\n"
 	);
 	make_brika();
-	puts("mmm Mala Benna Ya Latif!\n");
-	fflush(stdout);
-
-	win();
 	return 0;
 }
