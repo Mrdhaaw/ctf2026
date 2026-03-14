@@ -1,0 +1,10 @@
+services:
+  arj3_lil_chorba:
+    build: .
+    container_name: arj3_lil_chorba
+    user: ctf
+    working_dir: /home/ctf
+    entrypoint: /bin/sh -c "./ynetd -p 6666 /home/ctf/main"
+    ports:
+      - "6666:6666"
+    read_only: true
