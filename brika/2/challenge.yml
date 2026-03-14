@@ -1,7 +1,10 @@
 name: "brika v2"
 author: "Nerdicon"
 category: pwn
-description: "making a brika is a little harder"
+description: |-
+    making a brika is a little harder
+    `$ nc tcp.espark.tn 7022`
+
 value: 100
 extra:
     initial: 500
@@ -10,5 +13,9 @@ extra:
 flags:
     - flag: "Spark{mmm_mala_b3nn4_XD}"
       data: case_insensitive
+
+files:
+    - handout/main
+
 state: hidden
-version: "0.2"
+version: "0.1"

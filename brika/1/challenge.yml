@@ -1,14 +1,18 @@
 name: "brika v1"
 author: "Nerdicon"
 category: pwn
-description: "making a brika is easy"
-value: 100
+description: |-
+    making a brika is easy
+    `$ nc tcp.espark.tn 7022`
+value: 500
 extra:
     initial: 500
     decay: 20
     minimum: 100
 flags:
-    - flag: "Spark{br1k4_m3ngh1r_k4b4r}"
-      data: case_insensitive
+    - "Spark{br1k4_m3ngh1r_k4b4r}"
 state: hidden
+
+files:
+    - handout/main
 version: "0.1"
